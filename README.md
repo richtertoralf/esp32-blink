@@ -2,6 +2,8 @@
 
 Ein einfaches Einstiegsprojekt für den ESP32: Eine LED wird im Sekundentakt an- und ausgeschaltet. Der Status wird gleichzeitig seriell ausgegeben.
 
+![LED blinkt auf ESP32](esp32-blink.jpg)
+
 ---
 
 ## 💡 Beispielsketch
