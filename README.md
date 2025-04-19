@@ -56,3 +56,22 @@ Falls kein Port angezeigt wird:
 sudo usermod -aG dialout $USER
 ```
 → Danach neu einloggen oder neustarten  
+
+## ✅ Sketch hochladen & testen
+Lade den oben gezeigten Sketch hoch  
+Öffne den Serial Monitor über das Stecker-Symbol oben rechts  
+Stelle die Baudrate auf 115200  
+Du solltest eine wiederholte Ausgabe sehen:  
+```
+LED an
+LED aus
+LED an
+LED aus
+```
+Wenn eine LED am Board angeschlossen ist (z. B. via GPIO 2 → Widerstand → GND), sollte sie im Sekundentakt blinken.
+
+### 🧪 Fehlerquellen
+- Steckbrett: Achte darauf, dass beide Beine der LED nicht in derselben Reihe stecken
+- Polarität der LED beachten: Langes Bein = +, kurzes Bein = –
+
+Bei „low-side“-Schaltung: LED leuchtet bei digitalWrite(pin, LOW)
