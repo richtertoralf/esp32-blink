@@ -8,7 +8,7 @@ Ein einfaches Einstiegsprojekt für den ESP32: Eine LED wird im Sekundentakt an-
 
 ## 💡 Beispielsketch
 
-```
+```cpp
 int ledPin = 2;
 
 void setup() {
@@ -34,7 +34,7 @@ void loop() {
 
 ## 🛠️ Arduino IDE 2.x unter Ubuntu 24.04 installieren
 1. Snap-Version vermeiden (optional, aber empfohlen)
-```
+```bash
 sudo snap remove arduino
 # oder
 sudo apt purge arduino
@@ -44,19 +44,19 @@ sudo apt purge arduino
 - Lade die „Linux 64-bit“-Version herunter (z. B. arduino-ide_2.3.6_Linux_64bit.tar.xz)
 - Entpacke das Archiv:
 
-```
+```bash
 tar -xJf arduino-ide_2.3.6_Linux_64bit.tar.xz
 cd arduino-ide_2.3.6_Linux_64bit
 chmod +x arduino-ide
 ```
 
 Konfiguriere chrome-sandbox korrekt:
-```
+```bash
 sudo chown root chrome-sandbox
 sudo chmod 4755 chrome-sandbox
 ```
 Starte die IDE mit:
-```
+```bash
 ./arduino-ide
 ```
 
@@ -64,7 +64,7 @@ Starte die IDE mit:
 1. Boardverwalter-URL hinzufügen  
 Menü: File → Preferences  
 Bei „Additional Board Manager URLs“ eintragen:  
-```
+```bash
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 Dann auf „OK“ klicken.  
