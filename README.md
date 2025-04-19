@@ -32,6 +32,34 @@ void loop() {
 - USB-Kabel (mit Datenleitungen, nicht nur Ladefunktion)  
 - mit Arduino IDE 2.3.6 durchgeführt  
 
+## 🛠️ Arduino IDE 2.x unter Ubuntu 24.04 installieren
+1. Snap-Version vermeiden (optional, aber empfohlen)
+```
+sudo snap remove arduino
+# oder
+sudo apt purge arduino
+```
+2. Offizielle IDE herunterladen und manuell installieren
+- Gehe auf: https://www.arduino.cc/en/software
+- Lade die „Linux 64-bit“-Version herunter (z. B. arduino-ide_2.3.6_Linux_64bit.tar.xz)
+- Entpacke das Archiv:
+
+```
+tar -xJf arduino-ide_2.3.6_Linux_64bit.tar.xz
+cd arduino-ide_2.3.6_Linux_64bit
+chmod +x arduino-ide
+```
+
+Konfiguriere chrome-sandbox korrekt:
+```
+sudo chown root chrome-sandbox
+sudo chmod 4755 chrome-sandbox
+```
+Starte die IDE mit:
+```
+./arduino-ide
+```
+
 ## ⚙️ ESP32-Board in der Arduino IDE einrichten
 1. Boardverwalter-URL hinzufügen  
 Menü: File → Preferences  
