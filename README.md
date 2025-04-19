@@ -101,5 +101,12 @@ LED aus
 Wenn eine LED am Board angeschlossen ist (z. B. via GPIO 2 → Widerstand → GND), sollte sie im Sekundentakt blinken.
 
 ### 🧪 Fehlerquellen
-- Steckbrett: Achte darauf, dass beide Beine der LED nicht in derselben Reihe stecken
-- Polarität der LED beachten: Langes Bein = +, kurzes Bein = –
+Steckbrett: Achte darauf, dass beide Beine der LED nicht in derselben Reihe stecken
+
+Polung beachten:
+
+Langes Bein = Anode (+)
+
+Kurzes Bein = Kathode (–)
+
+Prüfe deine Verbindungen auf festen Sitz und richtigen GPIO
