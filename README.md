@@ -75,5 +75,3 @@ Wenn eine LED am Board angeschlossen ist (z. B. via GPIO 2 → Widerstand → 
 ### 🧪 Fehlerquellen
 - Steckbrett: Achte darauf, dass beide Beine der LED nicht in derselben Reihe stecken
 - Polarität der LED beachten: Langes Bein = +, kurzes Bein = –
-
-Bei „low-side“-Schaltung: LED leuchtet bei digitalWrite(pin, LOW)
